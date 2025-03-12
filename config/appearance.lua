@@ -1,6 +1,6 @@
 local gpu_adapters = require('utils.gpu-adapter')
 local backdrops = require('utils.backdrops')
-local colors = require('colors.custom')
+-- local colors = require('colors.custom')
 
 return {
    max_fps = 120,
@@ -17,9 +17,11 @@ return {
    cursor_blink_ease_out = 'EaseOut',
    default_cursor_style = 'BlinkingBlock',
    cursor_blink_rate = 650,
+   force_reverse_video_cursor = true,
 
    -- color scheme
-   colors = colors,
+   -- colors = colors,
+   color_scheme = 'Gruvbox dark, medium (base16)',
 
    -- background
    background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
@@ -29,7 +31,7 @@ return {
 
    -- tab bar
    enable_tab_bar = true,
-   hide_tab_bar_if_only_one_tab = false,
+   hide_tab_bar_if_only_one_tab = true,
    use_fancy_tab_bar = false,
    tab_max_width = 25,
    show_tab_index_in_tab_bar = false,

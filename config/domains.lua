@@ -7,7 +7,7 @@ return {
          name = 'wsl.ssh',
          remote_address = 'localhost',
          multiplexing = 'None',
-         default_prog = { 'fish', '-l' },
+         default_prog = { 'zsh', '-l' },
          assume_shell = 'Posix'
       }
    },
@@ -20,9 +20,9 @@ return {
       {
          name = 'WSL:Ubuntu',
          distribution = 'Ubuntu',
-         username = 'kevin',
-         default_cwd = '/home/kevin',
-         default_prog = { 'fish', '-l' },
+         username = 'yuwen',
+         default_cwd = '/home/yuwen',
+         default_prog = { 'zsh', '-l' },
       },
    },
 }
